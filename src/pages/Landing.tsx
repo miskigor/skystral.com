@@ -38,8 +38,10 @@ export default function Landing() {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-red-600">
             {t('site.subtitle')}
           </h2>
+        </div>
 
-          <div className="border-2 border-red-600 p-1 mb-16">
+        <div className="mb-16 -mx-4 lg:mx-0">
+          <div className="border-2 border-red-600 p-1">
             <div className="border-2 border-white p-8 md:p-12">
               <h3 className="text-3xl md:text-4xl font-bold text-center mb-8">
                 {t('landing.hero')}
@@ -54,7 +56,7 @@ export default function Landing() {
                   {t('landing.features.title')}
                 </h4>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                   {features.map((feature, index) => (
                     <div
                       key={index}
@@ -77,6 +79,9 @@ export default function Landing() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="max-w-4xl lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] mx-auto">
 
           <div id="services" className="mb-16">
             <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -108,30 +113,35 @@ export default function Landing() {
               </div>
             </div>
 
-            <div className="border-2 border-red-600 p-1 mb-12">
-              <div className="border-2 border-white p-8 md:p-12 text-center">
-                <p className="text-red-600 font-bold text-lg mb-4">
-                  {t('landing.growth.subtitle')}
-                </p>
-                <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                  {t('landing.growth.title')}
-                </h3>
-                <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                  {t('landing.growth.description')}
-                </p>
-              </div>
-            </div>
+          </div>
+        </div>
 
-            <div className="flex justify-center">
-              <a
-                href="https://form.typeform.com/to/rmjpZBRj"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-red-600 text-white font-bold text-xl px-12 py-5 hover:bg-red-700 transition-colors border-4 border-red-600 hover:border-red-700 inline-block"
-              >
-                {t('landing.apply')}
-              </a>
+        <div className="mb-12 -mx-4 lg:mx-0">
+          <div className="border-2 border-red-600 p-1">
+            <div className="border-2 border-white p-8 md:p-12 text-center">
+              <p className="text-red-600 font-bold text-lg mb-4">
+                {t('landing.growth.subtitle')}
+              </p>
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">
+                {t('landing.growth.title')}
+              </h3>
+              <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                {t('landing.growth.description')}
+              </p>
             </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] mx-auto">
+          <div className="flex justify-center mb-16">
+            <a
+              href="https://form.typeform.com/to/rmjpZBRj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red-600 text-white font-bold text-xl px-12 py-5 hover:bg-red-700 transition-colors border-4 border-red-600 hover:border-red-700 inline-block"
+            >
+              {t('landing.apply')}
+            </a>
           </div>
 
           <div className="text-center">
