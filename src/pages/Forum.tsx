@@ -143,7 +143,7 @@ export default function Forum() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="border-b-4 border-red-600 bg-black">
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 lg:px-8 xl:px-12 2xl:px-16 py-6 lg:max-w-[95%] xl:max-w-[90%] 2xl:max-w-[85%]">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-bold">{t('forum.title')}</h1>
             <div className="flex items-center space-x-4">
@@ -179,7 +179,7 @@ export default function Forum() {
         </div>
       </header>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 lg:px-8 xl:px-12 2xl:px-16 py-8 lg:max-w-[95%] xl:max-w-[90%] 2xl:max-w-[85%]">
         <div className="grid lg:grid-cols-3 gap-8">
           <div className="lg:col-span-1">
             <div className="border-2 border-white p-6 mb-6">
