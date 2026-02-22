@@ -21,10 +21,20 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       .then(({ data: { session } }) => {
         setUser(session?.user ?? null);
         setLoading(false);
+
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.classList.add('hidden');
+        }
       })
       .catch((error) => {
         console.error('Error getting session:', error);
         setLoading(false);
+
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          loadingScreen.classList.add('hidden');
+        }
       });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {

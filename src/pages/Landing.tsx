@@ -6,6 +6,12 @@ import LanguageSelector from '../components/LanguageSelector';
 export default function Landing() {
   const { t } = useLanguage();
 
+  console.log('Landing component mounted');
+  console.log('Environment check:', {
+    supabaseUrl: import.meta.env.VITE_SUPABASE_URL ? 'Set' : 'Missing',
+    supabaseKey: import.meta.env.VITE_SUPABASE_ANON_KEY ? 'Set' : 'Missing',
+  });
+
   const scrollToServices = () => {
     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   };
