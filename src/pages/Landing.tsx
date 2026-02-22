@@ -148,7 +148,7 @@ export default function Landing() {
             <div className="inline-block border-t-2 border-red-600 w-48 mb-6"></div>
             <div className="flex items-center justify-center space-x-4 mb-4">
               <a
-                href="https://www.instagram.com/skystralmarketing/"
+                href="https://www.instagram.com/skystralmarketing?igsh=bWd5OXY2cTdvam90"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-red-600 transition-colors"
